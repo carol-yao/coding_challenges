@@ -17,8 +17,6 @@ words.reverse!.map do |word|
   word.reverse!
 end
 
-# used map instead of each to recreate an array
-
 # another way would be
 words.reverse.map! do |word|
   word.reverse!
