@@ -1,17 +1,21 @@
 # Challenge: find the longest word in an array
-
+def long(input)
 longest = 0
+longest_word = ''
 
-array.each do |word|
+input.each do |word|
   if word.length > longest
     longest = word.length
   end
 end
 
-array.each do |word|
+input.each do |word|
   if word.length == longest
-    word
+    longest_word = word
   end
+end
+
+longest_word 
 end
 
 # ==============================
