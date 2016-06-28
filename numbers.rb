@@ -5,7 +5,7 @@
 # pseudo code : perform operation and compare numbers
 # perform operation on the number by converting the number into a string and splitting -> mapping to integer
 # then count the array length
-# iterate through the array and perform operation 
+# iterate through the array and perform operation
 
 def sum_power(num)
   num_array = num.to_s.split("").map(&:to_i)
@@ -14,12 +14,5 @@ def sum_power(num)
   num_array.each do |num|
     sum += num ** count
   end
-  sum
-end
-def narcissitic(num)
-  if num == sum_power(num)
-    true
-  else
-    false
-  end
+  num == sum
 end
