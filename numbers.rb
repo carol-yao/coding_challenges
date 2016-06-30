@@ -11,6 +11,7 @@ def sum_power(num)
   num_array = num.to_s.split("").map(&:to_i)
   count = num_array.count
   sum = 0
+
   num_array.each do |num|
     sum += num ** count
   end
